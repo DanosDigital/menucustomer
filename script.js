@@ -20,7 +20,7 @@ const db = firebase.database();
 // Menu items data
 const menuItems = [
   { id: 1, name: "Burger", description: "Juicy grilled burger with fresh vegetables", price: 80, image: "burger.jpg" },
-  { id: 2, name: "Pizza", description: "Classic pepperoni pizza with mozzarella cheese", price: 120, image: "pizza.jpg" },
+  { id: 2, name: "Pizza", description: "Classic pepperoni pizza with mozzarella cheese", price: 120, image: "Pizza.jpg" },
   { id: 3, name: "Pasta", description: "Creamy Alfredo pasta with garlic bread", price: 100, image: "pasta.jpg" },
   { id: 4, name: "Salad", description: "Fresh garden salad with house dressing", price: 60, image: "salad.jpg" },
   { id: 5, name: "Ice Cream", description: "Homemade vanilla ice cream with toppings", price: 40, image: "icecream.jpg" }
