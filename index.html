@@ -1,0 +1,53 @@
+<!-- CUSTOMER INTERFACE -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://*.firebaseio.com; script-src 'self' https://*.firebaseio.com https://www.gstatic.com;">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Danos Restaurant</h1>
+    <p>Select items to order</p>
+  </header>
+  <div class="container">
+    <h2 class="menu-title">Our Menu</h2>
+
+    <div class="menu-grid" id="menu-container">
+      <!-- Menu items will be loaded here -->
+    </div>
+  </div>
+
+  <div class="order-summary">
+    <div>
+      <span>Table Number:</span>
+      <input type="number" class="table-input" id="table-number" min="1" value="1">
+    </div>
+    <div class="total-price">Total: <span id="total-amount">0</span> ETB</div>
+    <button class="checkout-btn" id="checkout-btn">
+      <span class="cart-icon">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </span>
+      Place Order
+    </button>
+  </div>
+
+  <div class="order-success" id="order-success">
+    <h2>Order Placed Successfully!</h2>
+    <p>Your food will be prepared shortly.</p>
+    <button class="close-btn" id="close-success">Continue Browsing</button>
+  </div>
+
+</body>
+
+</html>
